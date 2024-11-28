@@ -1,3 +1,4 @@
-# rise-creative
-## My fist thesis for
-[aroken.ru](https://aroken.ru "aroken.ru")
+# Rise-Creative
+### **My first thesis for**
+[aroken.ru](https://aroken.ru/ "web-site aroken.ru")
+
