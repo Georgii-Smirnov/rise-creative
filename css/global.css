@@ -1,11 +1,11 @@
 :root {
-  --general-bg: #F5F5F5;
+  --general-bg: #f5f5f5;
 
-  --color-primary-main: #101C26;
+  --color-primary-main: #101c26;
   --color-border-color: #cecece;
   --action-color-label: #f0e714;
 
-  --transition: all .4s;
+  --transition: all 0.4s;
 }
 
 html {
@@ -96,7 +96,7 @@ body {
 
 .burger-icon span::before,
 .burger-icon span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -151,7 +151,7 @@ body {
 
   opacity: 0;
   visibility: hidden;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 
 .modal__window {
@@ -198,13 +198,18 @@ body {
   padding: 10px 0px 30px;
 }
 
-.field {
-  position: relative;
-}
-
 .input-container {
   display: flex;
   align-items: center;
+}
+
+.field {
+  position: relative;
+  display: block;
+}
+
+.modal__form-label {
+  margin-bottom: 18px;
 }
 
 .field .password-toggle {
@@ -217,7 +222,11 @@ body {
   font-size: 16px;
   color: #fff;
   z-index: 1;
-  margin-bottom: 16px;
+}
+
+/* Убираем у firefox значок "глаза" */
+input[type="password"]::-moz-password-field {
+  visibility: hidden;
 }
 
 .field__input {
@@ -229,10 +238,7 @@ body {
   padding: 16px 5px 15px 28px;
   font-size: 20px;
   color: #fff;
-  margin-bottom: 18px;
   transition: var(--transition);
-
-  position: relative;
 }
 
 .field__input::placeholder {
@@ -245,8 +251,8 @@ body {
 
 .field span {
   position: absolute;
-  bottom: 59px;
-  left: 25.5px;
+  left: 25px;
+  top: 3px;
   font-size: 14px;
   overflow: hidden;
   opacity: 0;
@@ -260,7 +266,7 @@ body {
   padding: 26px 5px 15px 28px;
 }
 
-.field__input:focus+span {
+.field__input:focus + span {
   overflow: visible;
   opacity: 1;
 }

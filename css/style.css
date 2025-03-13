@@ -7,6 +7,9 @@
 @import "footer.css";
 
 
+#sw-app-8a6cc7464bedb957a8017b8d4acdf4a3 .sw-review-item {
+  background-color: red; 
+}
 
 .about__button {
   border-radius: 100px;
